@@ -66,7 +66,7 @@ body {
 .header-flex{
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    
 }
 .header{
     border-bottom: solid 1px var(--header-border-color) ;
@@ -117,8 +117,10 @@ body {
 .link.current {
     color: var(--accent-color);
 }
-.contact{ display:flex;
-column-gap:50px;
+.contact{ 
+    display:flex;
+    column-gap:50px;
+    margin-left: auto;
 
 
 }
@@ -164,6 +166,7 @@ color:var(--accent-color)
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-color);
+    margin-bottom: 30px;
     }
 .modal_open_btn{
     margin-left: auto;
@@ -206,6 +209,7 @@ color:var(--accent-color)
         flex-basis: calc((100%-30px) / 4);
     }
 .desc-subtitle{
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -215,7 +219,7 @@ color:var(--accent-color)
     line-height: 1.72;
     color: var(--secondary-text-dark-color);}
     /*===/desc===*/
-.features{ 
+.features{  padding-top: 0;
 }
 .features-title{
     font-weight: 700;
@@ -286,8 +290,10 @@ color:var(--accent-color)
     font-size: 26px;
     line-height: 1.19;
     margin-bottom: 20px;
-    color:var(--text-light-color);}
-.address{font-style: normal;}
+    color:var(--text-light-color);
+    display: block;}
+.address{font-style: normal;
+}
 .location{
     font-weight: 400;
     line-height: 1.72;
@@ -298,7 +304,7 @@ color:var(--accent-color)
     font-weight: 400;
     line-height: 1.72;
     color: var(--footer-contact-color);
-margin-bottom: 9px;}
+    margin-bottom: 9px;}
 .footer-email{
     font-weight: 400;
     line-height: 1.72;
@@ -324,9 +330,10 @@ width: 0;
 height: 0;}
 .portfolio-btn-flex{
     display: flex;
-    align-items: center;
+
     column-gap: 8px; 
    justify-content: center;
+   margin-bottom: 50px;
 
 }
 .portfolio-btn{
@@ -338,7 +345,7 @@ height: 0;}
     border: solid 0  ;
     border-radius: 4px;
    padding: 6px 22px;
-   margin-bottom: 50px;
+   
 
 
 }
