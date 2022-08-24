@@ -8,7 +8,6 @@
     --secondary-font:'Raleway', sans-serif;
     --primary-background-color:#FFFFFF;
     --secondary-background-color:#2F303A;
-    --hero-background-color:#2F303A;
     --modal-btn-background-color:#2196F3;
     --logo-web-color:#2196F3;
     --team-background-color:#F5F4FA;
@@ -21,6 +20,10 @@
     --team-card-background-color:#FFFFFF;
     --team-card-border-color:#FFFFFF;
     --portfolio-box-border-color:#EEEEEE;
+    --hero-line-gradient:rgba(47, 48, 58, 0.4);
+    --team-box-shadow:rgba(0, 0, 0, 0.25);
+    --portfolio-card-hover-shadow:rgba(0, 0, 0, 0.25);
+    --portfoio-btn-shadow:rgba(0, 0, 0, 0.25);
 }
 h1,
 h2,
@@ -147,7 +150,10 @@ color:var(--accent-color)
 /*=======/header======*/
 
 .hero{
-    background-color: var(--hero-background-color);
+    background-image:linear-gradient(var(--hero-line-gradient),var(--hero-line-gradient)), 
+    url(../images/hero/img.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 200px ;
     padding-bottom: 200px;
 }
@@ -252,7 +258,7 @@ color:var(--accent-color)
 
 }
     .team-one-persone{
-       
+        box-shadow: 0 4px 4px 0 var(--team-box-shadow);
         border-bottom-left-radius: 4px ;
         border-bottom-right-radius: 4px ;
         background-color: var(--team-card-background-color);
@@ -360,6 +366,7 @@ height: 0;}
 .portfolio-btn:focus{
     background-color: var(--accent-color);
     color: var(--text-light-color);
+    box-shadow: 0 4px 4px 0 var(--portfoio-btn-shadow);
     
 }
 .portfolio-flex{
@@ -369,8 +376,8 @@ height: 0;}
 }
 .portfolio-project-box{
     max-width: 370px;
-    flex-basis: calc((100%-30)/3) ;
-}
+    flex-basis: calc((100%-30)/3) ;}
+.box-hover:hover{ box-shadow: 0 4px 4px  var(--portfolio-card-hover-shadow);}
 .portfolio-card-down{
     border-left:solid 1px var(--portfolio-box-border-color) ;
     border-right:solid 1px var(--portfolio-box-border-color) ;
